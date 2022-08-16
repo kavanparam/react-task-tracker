@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import TaskTracker from './components/TaskTracker';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+
+      <Header title="this is passed to the component as a prop with destructured input 
+      so 'props' isn't required" />
+
+      <TaskTracker />
+
     </div>
+
+    
   );
 }
+
+/*  
+Make another container with className='container' that goes below 
+this to follow Traversy's tutorial with React's default styling 
+*/
 
 export default App;
