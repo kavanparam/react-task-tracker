@@ -5,11 +5,15 @@
 // import React from 'react'
 
 //boilerplate arrow function with rafce
+
+import logo from '../logo.svg';
+
 const Header = ({title}) => {
   return (
     <div className="App">
 
         <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
             <h1>Hello from React</h1>
             <h2>this is a React sub-component!</h2>
             <p>(with default React header formatting)</p>

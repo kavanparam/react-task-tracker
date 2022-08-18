@@ -1,19 +1,15 @@
 import './App.css';
-import Header from './components/Header'
-import TaskTracker from './components/TaskTracker';
+import Header from './components/Header'    //default React content
+import TaskTracker from './components/TaskTracker'; //Traversy content
+
 
 function App() {
   return (
-    <div className="">
-
+    <div>
       <Header title="this is passed to the component as a prop with destructured input 
       so 'props' isn't required" />
-
       <TaskTracker />
-
     </div>
-
-    
   );
 }
 
